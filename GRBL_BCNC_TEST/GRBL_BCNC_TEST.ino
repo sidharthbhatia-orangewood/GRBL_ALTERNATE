@@ -1,7 +1,8 @@
 #include<SoftwareSerial.h>
 
 SoftwareSerial debug(2, 3);
-void setup() {
+void setup() 
+{
   // put your setup code here, to run once:
   Serial.begin(115200);
   debug.begin(115200);
@@ -10,7 +11,8 @@ void setup() {
 
 int x, y, z = 0.00;
 
-void loop() {
+void loop() 
+{
   // put your main code here, to run repeatedly:
   if (Serial.find('?'))
   {
