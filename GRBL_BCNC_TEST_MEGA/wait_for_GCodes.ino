@@ -21,6 +21,9 @@ void wait_for_GCodes()
   int arraySize = GCodes_array.size();
   debug.print("Total GCode lines=");
   debug.println(arraySize);
+
+  GCodes_len=arraySize;
+  
   for(int i=0;i<arraySize;i++)
   {
     debug.println(GCodes_array.get(i));
