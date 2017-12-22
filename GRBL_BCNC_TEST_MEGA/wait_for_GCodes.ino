@@ -2,7 +2,7 @@ void wait_for_GCodes()
 {
   while (!BCNC.find("G90\n"));
   debug.println("GCODE start");
-
+  unsigned long start_time=millis();
   String in_str = "";
   while (in_str != "M3" && in_str != "M30")
   {

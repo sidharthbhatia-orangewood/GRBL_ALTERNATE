@@ -14,16 +14,6 @@ void setup()
   BCNC.begin(115200);
   GRBL.begin(115200);
   debug.begin(115200);
-
-//  while(1)
-//  {
-//    GRBL.println("?");
-//    delay(1000);
-//    while(GRBL.available())
-//    {
-//      debug.print(char(GRBL.read()));
-//    }
-//  }
 }
 
 void loop()
